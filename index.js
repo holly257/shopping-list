@@ -25,8 +25,8 @@ $('form').submit(function(e){
 
 
 // permanently remove items from the list
-$('.shopping-list').on('click', 'li', function(e){
-    $(this).remove();
+$('.shopping-list').on('click', '.shopping-item-delete', function(e){
+    $(this).closest('li').remove();
 }); 
 
 
